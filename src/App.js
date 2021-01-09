@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Card from './components/layout'
+
+import HelloSpring from './components/reacts-spring/HelloSpring'
+import NumberSpring from './components/reacts-spring/NumberSpring';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Card name="Fade" color={'#e76f51'}>
+        <HelloSpring/>
+      </Card>
+
+      <Card name="Counting Numbers" color={'#14213d'}>
+        <NumberSpring/>
+      </Card>
     </div>
   );
 }
